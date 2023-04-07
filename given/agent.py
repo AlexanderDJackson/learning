@@ -25,3 +25,4 @@ class Agent:
       else: # status == 0
          # no winner
          p = 0
+

@@ -9,10 +9,9 @@ class RandomPlayer:
    
    def getMove( self, gameboard ):
       # picks a random point, then cycles to the next available space
-      m = random.randint(0,8)
-      while( gameboard[m] != '-' ):
-         m = ( m + 1 ) % 9
-      return m
+      let m = [x for x in m if x == '-']
+      n = random.randint(0,len(m))
+      return m[n]
          
    def endGame( self, status, gameboard ):
       # a good agent would learn here
